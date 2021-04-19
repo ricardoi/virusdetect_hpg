@@ -1,2 +1,2 @@
-# virusdetect_hpg
-This is a repo to run VirusDetect on the hipergator @UF
+# virusdetect_papa
+Custom scripts to analyze the Peruvian potato virome using VirusDetect &amp; ViNA
