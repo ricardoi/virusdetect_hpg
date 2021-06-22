@@ -10,12 +10,12 @@
 #SBATCH --mem=8gb
 #SBATCH --time=10:00:00
 #SBATCH --output=logs/vd-log_%a.out
-#SBATCH --array=1-1160%100
+#SBATCH --array=1-989%100
 
 date;hostname;pwd
 
 #@ Command example
-#	sbatch virusdetect_papa/virusdetect.sbatch vrl_Plants_239_U95 1-data/papa_reads/ 1-data/papa_genome/papa_Geno_AEWC01.fasta.gz
+#	sbatch virusdetect_hpg/virusdetect.sbatch vrl_Plants_239_U95 1-data/papa_reads/ 1-data/papa_genome/papa_Geno_AEWC01.fasta.gz
 
 RUN=${SLURM_ARRAY_TASK_ID} #998}
 
