@@ -28,6 +28,7 @@ HOST=$3 #@ HOST $PATH
 in_file=$(ls ${IN_DIR} | sed -n ${RUN}p)
 echo "Run ${RUN}: Input file ${in_file}"
 
+module load perl
 module load virusdetect
 
 virus_detect.pl --reference "$DATABASE" "$IN_DIR$in_file" --host_reference "$HOST" --thread_num 8
