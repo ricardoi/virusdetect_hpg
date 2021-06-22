@@ -24,12 +24,18 @@ DATABASE=$1 #@ DATABASE $PATH
 IN_DIR=$2 #@ FILE_NAME $PATH
 HOST=$3 #@ HOST $PATH
 
+echo "printing ${DATABASE} to load" 
+echo "file PATH=${IN_DIR}"
+echo "printing ${HOST}"
+
 # Array task
 in_file=$(ls ${IN_DIR} | sed -n ${RUN}p)
-echo "Run ${RUN}: Input file ${in_file}"
 
+echo "Run no. ${RUN}: Input file ${in_file}"
+
+module load ufrc
 module load perl
 module load virusdetect
 
-virus_detect.pl --reference "$DATABASE" "$IN_DIR$in_file" --host_reference "$HOST" --thread_num 8
+virus_detect.pl --reference "$DATABASE" "$IN_DIR""$in_file" --host_reference "$HOST" --thread_num 8
 
