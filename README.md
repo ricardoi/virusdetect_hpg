@@ -19,6 +19,7 @@ Regards,
 Max
 
 >Communication
->2021-06-22 09:01:36 EDT #open
->2021-06-29 15:25:25 EDT #reminder
->2021-07-30 10:22:31 EDT #answer
+2021-06-22 09:01:36 EDT #open
+2021-06-29 15:25:25 EDT #reminder
+2021-07-30 10:22:31 EDT #answer
+
